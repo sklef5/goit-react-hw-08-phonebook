@@ -11,7 +11,6 @@ import {getCurrentUser} from '../../Redux/Auth/authOperation'
 
 export function App() {
   const isToken = useSelector(selectorIsToken);
-  const isTokenID = useSelector(selectorIsTokenID);
   const dispatch = useDispatch()
 
 

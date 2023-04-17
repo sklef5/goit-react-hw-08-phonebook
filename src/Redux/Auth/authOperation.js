@@ -29,6 +29,7 @@ export const logoutUser = createAsyncThunk(
   async (_, thunkApi) => {
     try {
       const user = await logoutUserApi();
+      return user
     } catch (error) {
       return thunkApi.rejectWithValue(error.message);
     }
