@@ -6,7 +6,7 @@ import MenuBlock from '../NavMenu/NavMenu';
 import Register  from '../../Page/RegisterPage/RegisterPage';
 import Login from '../../Page/LoginPage/LoginPage'
 import Content from '../../Page/ContentPage'
-import {selectorIsToken, selectorIsTokenID} from '../../services/isAuth'
+import {selectorIsToken} from '../../services/isAuth'
 import {getCurrentUser} from '../../Redux/Auth/authOperation'
 
 export function App() {
