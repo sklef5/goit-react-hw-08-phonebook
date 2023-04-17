@@ -1,0 +1,56 @@
+.wrapper {
+  height: 80px;
+  background-color: #878989;
+}
+.menuBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.logo{
+    font-size: 35px;
+    font-weight: 700;
+    color:#fff;
+}
+.authBlock {
+  display: flex;
+
+  list-style: none;
+  & >li:not(:last-child){
+    margin-right: 20px;
+  }
+}
+.userBlock {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+.link{
+    text-decoration: none;
+    font-size:20px;
+    color: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.userAuth{
+  font-size: 20px;
+  color: #fff;
+  margin-right: 15px;
+}
+.btnLogOut{
+  height: 30px;
+  width: 100px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover{
+    background-color: #fff;
+  }
+}
