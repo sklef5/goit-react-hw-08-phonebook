@@ -37,7 +37,7 @@ export const logoutUserApi = (credentials)=>{
 }
 
 export const getCurrentUserApi = ()=>{
-  return axios.post('/users/current' )
+  return axios.get('/users/current' )
   .then(({ data }) => {
     console.log('data', data)
     return data;
