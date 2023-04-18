@@ -8,7 +8,7 @@ export const AuthBlock = () => {
   const isUser = useSelector(user);
   return (
     <ul className={s.userBlock}>
-      <li className={s.userAuth}>{isUser}</li>
+      <li className={s.userAuth}>{isUser.email}</li>
       <li>
         <button onClick={() => dispatch(logoutUser())} className={s.btnLogOut}> Logout </button>
       </li>

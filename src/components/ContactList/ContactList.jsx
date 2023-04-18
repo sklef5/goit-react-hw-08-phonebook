@@ -25,7 +25,7 @@ const ContactList = () => {
     <Wrapper>
     {contactList?.length===0 ? <Emptylist>You don't add contacts yet</Emptylist>:
     (<List>
-      {contactList?.map(({ avatar, name, number, id }) => {
+      {contactList?.map(({ name, number, id }) => {
         return (
           <Contact key={id}>
             <Block>

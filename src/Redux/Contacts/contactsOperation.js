@@ -42,13 +42,14 @@ export const getContact = createAsyncThunk(
       return thunkApi.rejectWithValue(error.message);
     }
   },
-  // {
-  //   condition: (_, { getState }) => {
-  //     const { items } = getState().contacts;
-  //     if (!items.length) return true;
-  //     return false;
-  //   },
-  // }
+  {
+    condition: (_, { getState }) => {
+      const { items } = getState().contacts;      
+      const currentToken = getState().auth.token;
+      if (!items.length && Boolean(currentToken)) return true;
+      return false;
+    },
+  }
 );
 export const removeContact = createAsyncThunk(
   'contacts/remove',

@@ -24,7 +24,7 @@ export const Form = () => {
       };
     });
   };
-  const newContact = { ...form, id: nanoid() };
+  const newContact = { ...form };
 
   const handleSubmit = e => {
     e.preventDefault();
